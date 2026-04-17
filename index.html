@@ -1,13 +1,71 @@
 <!doctype html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>todo-app</title>
+    <title>Todo App med TypeScript</title>
+    <script type="module" src="/src/main.ts"></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <div class="container">
+      <header>
+        <h1>Min Todo-app</h1>
+        <p>Skapa, uppdatera och spara uppgifter med TypeScript och LocalStorage.</p>
+      </header>
+
+      <section class="panel">
+        <form id="todo-form">
+          <div class="form-grid">
+            <div>
+              <label for="task">Uppgift</label>
+              <input id="task" name="task" type="text" placeholder="Skriv en ny uppgift..." />
+            </div>
+
+            <div>
+              <label for="priority">Prioritet</label>
+              <select id="priority" name="priority">
+                <option value="1">1 - Hög</option>
+                <option value="2" selected>2 - Medel</option>
+                <option value="3">3 - Låg</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="btn" type="submit">Lägg till uppgift</button>
+          <p id="error-message" class="error-message" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="panel toolbar">
+        <div>
+          <strong>Visa uppgifter</strong>
+        </div>
+
+        <div>
+          <label for="filter">Filter</label>
+          <select id="filter">
+            <option value="all">Alla</option>
+            <option value="active">Ej klara</option>
+            <option value="completed">Klara</option>
+          </select>
+        </div>
+      </section>
+
+      <section>
+        <div id="todo-list" class="todo-list"></div>
+      </section>
+    </div>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
