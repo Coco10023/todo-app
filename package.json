@@ -1,7 +1,7 @@
 {
-  "name": "todo-app",
+  "name": "todo-typescript-lab",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "typescript": "~6.0.2",
-    "vite": "^8.0.4"
+    "typescript": "^5.8.3",
+    "vite": "^7.0.0"
   }
 }
