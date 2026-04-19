@@ -59,8 +59,15 @@ Validering sker i klassfilen enligt uppgiftens krav.
 ## LocalStorage
 Todos sparas i webbläsarens LocalStorage under nyckeln `todos`. Vid sidomladdning läses uppgifterna automatiskt tillbaka in via konstruktorn i `TodoList`.
 
+## Länk till publicerad hemsida: https://coco10023.github.io/todo-app/ 
+
+## Github repo: https://github.com/Coco10023/todo-app.git 
+
 ## Installation och körning
 
 ```bash
 npm install
 npm run dev
+```
+
+
